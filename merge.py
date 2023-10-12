@@ -1,7 +1,7 @@
-def merge_list(list1, list2):
-    for x in list2:
-        list1.append(x)
-    return sort(list1)
+def merge_list(input_1, input_2):
+    for x in input_2:
+        input_1.append(x)
+    return sort(input_1)
 #Selection Sort
 def sort(unsorted):
     try:
