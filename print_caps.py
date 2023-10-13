@@ -1,5 +1,5 @@
 def allcaps(func):
     def wrapper():
-        result = func()
-        return result.upper()
+        res = func()
+        return res.upper()
     return wrapper

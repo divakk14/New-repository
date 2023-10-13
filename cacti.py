@@ -1,12 +1,12 @@
 def cacti_number(plot):
     # Get the dimensions of the plot
     rows = len(plot)
-    cols = len(plot[0])
+    columns = len(plot[0])
     
-    # Count the number of cacti that can still be planted
-    count = 0
+    
+    count_n_of_cacti = 0
     for i in range(rows):
-        for j in range(cols):
+        for j in range(columns):
             if plot[i][j] == 0:
                 # Check if the adjacent blocks are empty
                 adjacent_empty = True
@@ -16,18 +16,18 @@ def cacti_number(plot):
                     adjacent_empty = False
                 if i < rows-1 and plot[i+1][j] == 1:
                     adjacent_empty = False
-                if j < cols-1 and plot[i][j+1] == 1:
+                if j < columns-1 and plot[i][j+1] == 1:
                     adjacent_empty = False
                 if i > 0 and j > 0 and plot[i-1][j-1] == 1:
                     adjacent_empty = False
-                if i > 0 and j < cols-1 and plot[i-1][j+1] == 1:
+                if i > 0 and j < columns-1 and plot[i-1][j+1] == 1:
                     adjacent_empty = False
                 if i < rows-1 and j > 0 and plot[i+1][j-1] == 1:
                     adjacent_empty = False
-                if i < rows-1 and j < cols-1 and plot[i+1][j+1] == 1:
+                if i < rows-1 and j < columns-1 and plot[i+1][j+1] == 1:
                     adjacent_empty = False
                 
                 if adjacent_empty:
-                    count += 1
+                    count_n_of_cacti += 1
     
-    return count
+    return count_n_of_cacti

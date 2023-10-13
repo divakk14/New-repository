@@ -16,16 +16,6 @@ def my_steps(n):
         
         return ways[n]
 
-# # For testing
-# if __name__ == "__main__":
-#     # Test cases
-#     input_number = 2
-#     output_number = my_steps(input_number)
-#     print(f"Input : {input_number}\nOutput: {output_number}")
-
-#     input_number = 3
-#     output_number = my_steps(input_number)
-#     print(f"Input : {input_number}\nOutput: {output_number}")
 
 
 
