@@ -1,0 +1,4 @@
+Uses:
+1 - Reusability: so the written code can be re used by other engineers. 
+2 - Method overriding: We can do method overriding. For example child classes can override methods from parent classes for any specific task while sticking to common interface also. 
+3 - Polymorphism: This is very helpful when we have objects of different classes which needs to be treated as objects of the root or common parent class. 

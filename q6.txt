@@ -1,0 +1,3 @@
+1 - variable a won't change because the func is being called as call by value. when this func is called, the copy of a variable will be passed and the changes are done to the copy not to original variable. 
+2 - value will change because a mutuable obj is being passed to a func, this is passed as a call by reference meaning that the value which is passed will refer to the same location of the original obj 
+due to which modifications inside the func will be reflected to the original obj as well.
